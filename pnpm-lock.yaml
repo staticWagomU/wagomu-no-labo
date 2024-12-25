@@ -14,6 +14,9 @@ importers:
       '@astrojs/react':
         specifier: ^4.1.2
         version: 4.1.2(@types/node@22.10.2)(@types/react-dom@19.0.2(@types/react@19.0.2))(@types/react@19.0.2)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@rive-app/react-canvas':
+        specifier: ^4.17.5
+        version: 4.17.5(react@19.0.0)
       '@types/react':
         specifier: ^19.0.2
         version: 19.0.2
@@ -769,6 +772,14 @@ packages:
 
   '@oslojs/encoding@1.1.0':
     resolution: {integrity: sha512-70wQhgYmndg4GCPxPPxPGevRKqTIJ2Nh4OkiMWmDAVYsTQ+Ta7Sq+rPevXyXGdzr30/qZBnyOalCszoMxlyldQ==}
+
+  '@rive-app/canvas@2.25.3':
+    resolution: {integrity: sha512-L/uF7/o14yW1hRad+Pt1gmIxVjmp7HYtBZmHR9XzC0BBwUyqMr5S1c/x8dHa4PbvljHwI1TrTU+drCCScZfRnQ==}
+
+  '@rive-app/react-canvas@4.17.5':
+    resolution: {integrity: sha512-BvjaiW80IyLOb76uZEvOOEp9INfqCPa29ailA8AvqT+FiXUmgiCh+JhIsR3cx3CCqW3DhuORr0F8AF1XFkxCwA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
 
   '@rollup/pluginutils@5.1.4':
     resolution: {integrity: sha512-USm05zrsFxYLPdWWq+K3STlWiT/3ELn3RcV5hJMghpeAIhxfsUIg6mt12CBJBInWMV4VneoV7SfGv8xIwo2qNQ==}
@@ -2742,6 +2753,13 @@ snapshots:
       fastq: 1.17.1
 
   '@oslojs/encoding@1.1.0': {}
+
+  '@rive-app/canvas@2.25.3': {}
+
+  '@rive-app/react-canvas@4.17.5(react@19.0.0)':
+    dependencies:
+      '@rive-app/canvas': 2.25.3
+      react: 19.0.0
 
   '@rollup/pluginutils@5.1.4(rollup@4.28.1)':
     dependencies:
