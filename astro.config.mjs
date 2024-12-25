@@ -7,8 +7,12 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://labo.wagomu.me',
   output: 'server',
-  adapter: cloudflare(),
-  integrations: [react()],
+  adapter: cloudflare({
+    platformProxy: {
+      enabled: true
+    }
+  }),
+
+  integrations: [react()]
 });
