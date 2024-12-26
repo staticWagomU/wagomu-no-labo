@@ -1,8 +1,8 @@
 import Rive from "@rive-app/react-canvas";
 const rivePath = new URL(
-	"../Rive/github.riv",
-	// astroはbuild時に自身ではなくdist/entry.mjsに向けてしまう
-	import.meta.url
+  "../Rive/github.riv",
+  // astroはbuild時に自身ではなくdist/entry.mjsに向けてしまう
+  import.meta.url,
 );
 
 export const RiveDemo = () => {
@@ -13,5 +13,5 @@ export const RiveDemo = () => {
         stateMachines={["State Machine 1"]}
       />
     </>
-  )
+  );
 };
